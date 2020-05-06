@@ -45,10 +45,15 @@ nav {
 
 .nav-li-container li {
   padding: 1em;
-
+}
+.nav-li-container a{
+  text-decoration: line-through;
+  color: black;
 }
 
+
 h2 {
+  text-decoration: line-through;
   color:rgb(180, 2, 2);
 }
 .products-wrapper {
@@ -59,11 +64,18 @@ h2 {
 .grid-wrapper {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(2,1fr);
+  grid-template-rows: repeat(3,1fr);
+  grid-gap: 10px;
 }
 
 .grid-wrapper img {
   display: block;
-  width: 100%; 
+  width: 100%;  
 }
+
+.hero-img { 
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
 
